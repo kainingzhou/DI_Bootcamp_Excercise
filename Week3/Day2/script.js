@@ -213,3 +213,117 @@ typeof(1 != 2)
 // "Bob" - "bill"
 // // Prediction: NaN Because these two are strings, not numbers, therefore cannot calculate
 // // Actual: NaN
+
+// DI-Bootcamp/Week3/Day2/ExerciseXPGold
+
+// Exercise 1 : Favorite Color
+// Instructions
+// let sentence = ["my","favorite","color","is","blue"];
+// Write some simple Javascript code that will join all the items in the array above, and console.log the result.
+let sentence = ["my","favorite","color","is","blue"];
+console.log(sentence.join(' '));
+
+// Exercise 2. Mix up 
+// Create 2 variables. The values should be strings. For example:
+// let str1 = "mix";
+// let str2 = "pod";
+// 2. Slice out and swap the first 2 characters of the two strings from part 1.
+// 3. Create a third variable where the value is the concatenation of the two strings from the part 1 (separated by a space).
+// 4. Finally console.log the new concatenated string.
+let str1 = "mix";
+let str2 = "pod";
+str1 = 'pox';
+str2 = 'mid';
+let str3 = `${str1} ${str2}`;
+console.log(str3);
+
+// Exercise 3 : Calculator
+// Instructions
+// Make a Calculator. Follow the instructions:
+// Prompt the user for the first number.
+// Store the first number in a variable called num1.
+// Hint : console.log the type of the variable num1. What should you do to convert it to a number ?
+// Prompt the user for the second number.
+// Store the second number in a variable called num2.
+// Create an Alert where the value is the SUM of num1 and num2.
+// BONUS: Make a program that can subtract, multiply, and also divide!
+let num1 = Number(prompt('What is your first number?', ' '));
+let num2 = Number(prompt('What is your second number?', ' '));
+let num3 = num1 + num2;
+alert(`The sum of num1 and num2 is ${num3}`);
+
+// DI-Bootcamp/Week3/Day2/ExerciseXPNinja
+// Exercise 1 : Evaluation
+// Instructions
+// For each expression, predict what you think the output will be in a comment (//) without first running the command.
+// Of course, explain each prediction.
+// Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
+// Evaluate the comparisons found below:
+//     5 >= 1
+// Predict: true (because this is a Boolean)
+// Actual:
+//     0 === 1
+// Predict: false (because here to compare both value and data type)
+// Actual: false
+//     4 <= 1
+// Predict: false (here is a boolean, 4 is bigger than 1 therefore is false)
+// Actual: false
+//     1 != 1
+// Predict: false (here is Boolean, 1 should be equal to 1)
+// Actual: false
+//     "A" > "B"
+// Predict: false ("A" and "B" are strings, could not compare)
+// Actual: false
+//     "B" < "C"
+// Predict: false ("B" and "C" are strings, could not compare)
+// Actual: true
+//     "a" > "A"
+// Predict: false ("a" and "A" are strings, could not compare)
+// Actual: true
+//     "b" < "A"
+// Predict: false ("b" and "A" are strings, could not compare)
+// Actual: false
+//     true === false
+// Predict: false (true is not equal to false)
+// Actual: false
+//     true != true
+// Predict: false (true is equal to true)
+// Actual: false
+
+// Exercise 2 : Ask For Numbers
+// Instructions
+// Ask the user for a string of numbers separated by commas
+// Console.log the sum of the numbers.
+// Hint: use some string methods
+// Examples
+// "2,3"➞ 5
+// let numAll = prompt('Please type in a string of numbers seperated by commas', ' ');
+// let value1 = Number(numAll[0]);
+// let value2 = Number(numAll[1]);
+// let value3 = Number(numAll[2]);
+// let sum = value1 + value2 + value3;
+// console.log(sum);
+
+// Exercise 3 : Find Nemo
+// Instructions
+// Hint: if statement (tomorrow’s lesson)
+// Ask the user to give you a sentence containing the word “Nemo”. For example "I love the movie named Nemo"
+// Find the word “Nemo”
+// Console.log a string as follows: "I found Nemo at [the position of the word Nemo]".
+// If you can’t find Nemo, console.log “I can’t find Nemo”.
+let input = prompt('Please give me a sentence containing the word \'Nemo\'', 'Example: I love the movie named Nemo');
+let position = input.search('Nemo');
+console.log(`I found Nemo at ${position}`);
+
+// Exercise 4 : Boom
+// Instructions
+// Hint: if statement (tomorrow’s lesson)
+
+// Prompt the user for a number. Depending on the users number you will return a string of the word “Boom”. Follow the rules below:
+
+// If the number given is less than 2 : return “boom”
+// If the number given is bigger than 2 : the string should include n number of “o”s (n being the number given)
+// If the number given is evenly divisible by 2, add a exclamation mark to the end.
+// If the number given is evenly divisible by 5, return the string in ALL CAPS.
+// If the number given is evenly divisible by both 2 and 5, return the string in ALL CAPS and add an exclamation mark to the end.
+// Don't know how to solve
